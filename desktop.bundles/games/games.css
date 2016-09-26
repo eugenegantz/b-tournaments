@@ -1,0 +1,174 @@
+/* ../../desktop.blocks/page/page.css:begin */
+.page {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    min-width: 480px;
+}
+
+@media screen and (max-width: 640px) {
+    .page {
+        padding: 12px;
+        box-sizing: border-box;
+    }
+}
+/* ../../desktop.blocks/page/page.css:end */
+/* ../../desktop.blocks/p-games/p-games.css:begin */
+.b-games {
+    position: relative;
+    max-width: 500px;
+    min-width: 480px;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+/* ../../desktop.blocks/p-games/p-games.css:end */
+/* ../../desktop.blocks/b-games/b-games.css:begin */
+.b-games {}
+
+.b-games__body {
+    margin-top: 24px;
+    font-size: 14px;
+}
+
+.b-games__tournament-title {
+    font-weight: bold;
+    position: relative;
+}
+
+.b-games__star {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    height: 16px;
+    width: 16px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAC4jAAAuIwF4pT92AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNpj+I8VfD3z/+tprDIM2DU8rQUhEjRc1QUhYjX8uPv/DAMIARlEaXjZD9UAZBCl4aYDVMNNR2waXvT8P8sCVYEfAZW96AXb8PnQ/4vSBFQDFQCVIZz0+9X/Wy44Vd9yBSlA98O/P/+fVGBR/aQSJIXd0x+2YNEAFMQZSg9SsGgACuLQ8Pf/RQmookcF/x8XwrwrAZLCouHLcZD0eb7/71ZBRYAMIBcoCJTCogHo42sG/3/cQk0mt0CCT8qxaXje8f/vVywR//cbSAoGAClWlzSYU++dAAAAAElFTkSuQmCC');
+}
+
+.b-games__match {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 6px 0;
+    padding: 6px 0;
+}
+
+.b-games_tab_fav .b-games__match,
+.b-games_tab_fav .b-games__tournament {
+    display: none;
+}
+
+.b-games_tab_fav .b-games__match_fav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.b-games_tab_fav .b-games__tournament_fav {
+    display: block;
+}
+
+.b-games__tournament_fav .b-games__star {
+    display: block;
+}
+
+.b-games__match-time {
+    color: #999;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-preferred-size: 12px;
+        flex-basis: 12px;
+}
+
+.b-games__match-name {
+    -webkit-box-flex: 10;
+        -ms-flex: 10;
+            flex: 10;
+    text-decoration: none;
+    color: black;
+}
+
+.b-games__match:hover {
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(229,229,229,1) 100%);
+    background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(229,229,229,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e5e5e5',GradientType=1 );
+}
+
+.b-games__match:hover .b-games__match-name {
+    text-decoration: underline;
+}
+
+.b-games__match-result {
+    font-weight: bold;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+
+.b-games__match-status {
+    color: #999;
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+}
+
+.b-games__checkbox-fav {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-right: 8px;
+}
+
+.b-games__match-time,
+.b-games__match-name,
+.b-games__match-result,
+.b-games__match-status {
+    margin-right: 5px;
+}
+
+.b-games__checkbox-fav .checkbox__control {
+    float: right;
+}
+/* ../../desktop.blocks/b-games/b-games.css:end */
+/* ../../libs/bem-components/common.blocks/checkbox/checkbox.css:begin */
+.checkbox {
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+/* ../../libs/bem-components/common.blocks/checkbox/checkbox.css:end */
+/* ../../desktop.blocks/b-tabs/b-tabs.css:begin */
+.b-tabs {}
+
+.b-tabs__tab {
+    padding: 8px;
+    background: #555;
+    color: white;
+    margin-right: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.b-tabs__tab:hover {
+    background: #666;
+}
+
+.b-tabs__tab_selected {
+    background: #ff7e00;
+}
+
+.b-tabs__tab_selected:hover {
+    background: orange;
+}
+/* ../../desktop.blocks/b-tabs/b-tabs.css:end */
+/* ../../desktop.blocks/b-games/__tournament/b-games__tournament.css:begin */
+.b-games__tournament {
+    margin-bottom: 42px;
+}
+/* ../../desktop.blocks/b-games/__tournament/b-games__tournament.css:end */
