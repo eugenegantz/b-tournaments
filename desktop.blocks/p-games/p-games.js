@@ -19,9 +19,25 @@ modules.define('p-games', ['i-bem__dom', 'BEMHTML', 'm-api', 'm-games'], functio
                                 }
 
                                 bGames.elemInstances('tournament');
+
+                                self.initLocStorage();
                             });
                         }
                     }
+                },
+
+                initLocStorage: function() {
+                    var favId = API.getLocStorageTourData();
+                    var model = this.findBlockInside('b-games').getModel();
+
+                    favId.forEach(function(id) {
+                        model.setFavorite(model.getMatch(id));
+                    });
+
+                    window.onbeforeunload = function() {
+                        var id = Object.keys(model.getFavorites());
+                        API.saveLocStorageTourData(id);
+                    };
                 }
             },
             {

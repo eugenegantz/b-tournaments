@@ -80,6 +80,28 @@ modules.define('m-api', [], function(provide) {
             }
 
             callback(this._tData);
+        },
+
+        /**
+         * Сохранить избранные матчи
+         * @param {Array | Number} id
+         * */
+        saveLocStorageTourData: function(id) {
+            if (typeof id == 'undefined') return;
+
+            if (!Array.isArray(id)) {
+                id = [id];
+            }
+
+            localStorage.setItem('b-tournaments__fav-matches', JSON.stringify(id));
+        },
+
+        /**
+         * Получить изюранные матчи
+         * @return {Array}
+         * */
+        getLocStorageTourData: function() {
+            return JSON.parse(localStorage.getItem('b-tournaments__fav-matches')) || [];
         }
 
     });

@@ -111,6 +111,8 @@ modules.define('b-games', ['i-bem__dom', 'BEMHTML'], function(provide, BEMDOM, B
                 _onSetFav: function(ctx, e) {
                     var elemM = this.elemInstance(this.mElemCache[e.id]);
                     var elemT = this.elemInstance(this.tElemCache[e.model.tournament.get('id')]);
+                    var cb = elemM.findBlockInside('checkbox');
+                    cb.setMod('checked');
                     elemM.setMod('fav', true);
                     elemT.setMod('fav', true)
                 },
