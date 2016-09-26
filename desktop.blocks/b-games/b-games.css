@@ -1,0 +1,94 @@
+.b-games {}
+
+.b-games__body {
+    margin-top: 24px;
+    font-size: 14px;
+}
+
+.b-games__tournament-title {
+    font-weight: bold;
+    position: relative;
+}
+
+.b-games__star {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    height: 16px;
+    width: 16px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAC4jAAAuIwF4pT92AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNpj+I8VfD3z/+tprDIM2DU8rQUhEjRc1QUhYjX8uPv/DAMIARlEaXjZD9UAZBCl4aYDVMNNR2waXvT8P8sCVYEfAZW96AXb8PnQ/4vSBFQDFQCVIZz0+9X/Wy44Vd9yBSlA98O/P/+fVGBR/aQSJIXd0x+2YNEAFMQZSg9SsGgACuLQ8Pf/RQmookcF/x8XwrwrAZLCouHLcZD0eb7/71ZBRYAMIBcoCJTCogHo42sG/3/cQk0mt0CCT8qxaXje8f/vVywR//cbSAoGAClWlzSYU++dAAAAAElFTkSuQmCC');
+}
+
+.b-games__match {
+    display: flex;
+    flex-direction: row;
+    margin: 6px 0;
+    padding: 6px 0;
+}
+
+.b-games_tab_fav .b-games__match,
+.b-games_tab_fav .b-games__tournament {
+    display: none;
+}
+
+.b-games_tab_fav .b-games__match_fav {
+    display: flex;
+}
+
+.b-games_tab_fav .b-games__tournament_fav {
+    display: block;
+}
+
+.b-games__tournament_fav .b-games__star {
+    display: block;
+}
+
+.b-games__match-time {
+    color: #999;
+    flex: 1;
+    flex-basis: 12px;
+}
+
+.b-games__match-name {
+    flex: 10;
+    text-decoration: none;
+    color: black;
+}
+
+.b-games__match:hover {
+    background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(229,229,229,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(229,229,229,1) 100%);
+    background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(229,229,229,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e5e5e5',GradientType=1 );
+}
+
+.b-games__match:hover .b-games__match-name {
+    text-decoration: underline;
+}
+
+.b-games__match-result {
+    font-weight: bold;
+    flex: 1;
+}
+
+.b-games__match-status {
+    color: #999;
+    flex: 3;
+}
+
+.b-games__checkbox-fav {
+    flex: 1;
+    margin-right: 8px;
+}
+
+.b-games__match-time,
+.b-games__match-name,
+.b-games__match-result,
+.b-games__match-status {
+    margin-right: 5px;
+}
+
+.b-games__checkbox-fav .checkbox__control {
+    float: right;
+}

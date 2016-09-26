@@ -1,0 +1,24 @@
+.b-tabs {}
+
+.b-tabs__tab {
+    padding: 8px;
+    background: #555;
+    color: white;
+    margin-right: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.b-tabs__tab:hover {
+    background: #666;
+}
+
+.b-tabs__tab_selected {
+    background: #ff7e00;
+}
+
+.b-tabs__tab_selected:hover {
+    background: orange;
+}

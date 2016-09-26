@@ -1,0 +1,12 @@
+{
+  "name": "b-games",
+  "description": "Тестовое задание",
+  "ignore": [
+    ".bem/cache",
+    "node_modules",
+    "libs"
+  ],
+  "dependencies": {
+    "bem-components": "3.0.0"
+  }
+}
